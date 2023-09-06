@@ -9,23 +9,6 @@ export default function VisualizarAparelho({ aparelhos }) {
     return <div className="page">Aparelho não encontrado</div>;
   }
 
-  // return (
-  //   <>
-  //   <div>
-  //     <h2>aparelho:</h2>
-  //     <ul>
-  //       {VisualizarAparelho.map(VisualizarAparelho => (
-  //         <li key={VisualizarAparelho.id}>
-  //           <Link to={`/visualizar/aparelho/${visualizarAparelho.id}`}>
-  //             {VisualizarAparelho.nome}          
-  //           </Link>
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   </div>
-  //   </>
-  // );
-
   return (
     <div className="page">
       <h2>Detalhes do Aparelho</h2>
