@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 //criando uma página para visualizar os detalhes de um aparelho
 export default function VisualizarAparelho({ aparelhos }) {
   const { id } = useParams();
-  const aparelho = aparelhos.find((item) => item.id === parseInt(id));
+  const aparelho = aparelho.find((item) => item.id === parseInt(id));
 
   if (!aparelho) {
     return <div className="page">Aparelho não encontrado</div>;
@@ -12,7 +12,7 @@ export default function VisualizarAparelho({ aparelhos }) {
   // return (
   //   <>
   //   <div>
-  //     <h2>Aparelhos:</h2>
+  //     <h2>aparelho:</h2>
   //     <ul>
   //       {VisualizarAparelho.map(VisualizarAparelho => (
   //         <li key={VisualizarAparelho.id}>
@@ -31,7 +31,7 @@ export default function VisualizarAparelho({ aparelhos }) {
       <h2>Detalhes do Aparelho</h2>
       <div className="device-details">
         <img src={"./public/iphone-14.png"} alt={iphone.png} />
-        <h3>{iPhone}</h3>
+        <h3>{aparelho.nome}</h3>
         <p>{aparelho.descricao}</p>
         <p>Marca: {aparelho.marca}</p>
         <p>Preço: R$ {aparelho.preco.toFixed(2)}</p>

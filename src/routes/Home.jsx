@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { ListaAparelhos } from "../components/ListaAparelhos";
-
 
 //criando duas propagandas promocionais
 export default function Home() {
-  <Link to="/Lista/Aparelhos/">Ver Aparelhos</Link>
+  <Link to="/Lista/aparelho/">Ver aparelho</Link>
   return (
     <>
     <div className="page">
