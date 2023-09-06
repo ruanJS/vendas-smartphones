@@ -20,24 +20,6 @@ export default function Home() {
       <img src="iphone-se.png" alt="iPhone SE" />
       <button>Comprar Agora</button>
     </div>
-    {/* <div className="promotion">
-      <h3>iPhone 13 - Oferta Especial!</h3>
-      <p>Adquira o iPhone 13 com um preço especial por tempo limitado. Não perca esta oportunidade.</p>
-      <img src="iphone-13.png" alt="iPhone 13" />
-      <button>Comprar Agora</button>
-      </div>
-      <div className="promotion">
-      <h3>iPhone 14 - Oferta Especial!</h3>
-      <p>Adquira o iPhone 14 com um preço especial por tempo limitado. Não perca esta oportunidade.</p>
-      <img src="iphone-14.png" alt="iPhone 14" />
-      <button>Comprar Agora</button>
-    </div>
-    <div className="promotion">
-    <h3>iPhone 14 Pro Max - Oferta Especial!</h3>
-      <p>Adquira o iPhone 14 Pro Max com um preço especial por tempo limitado. Não perca esta oportunidade.</p>
-      <img src="iphone_14_pro_max.png" alt="iPhone 14 Pro Max" />
-      <button>Comprar Agora</button>
-    </div> */}
   </div>
     </>
   );
