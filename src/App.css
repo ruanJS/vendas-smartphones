@@ -155,4 +155,18 @@ li {
 a {
     text-decoration: none;
     color: #007bff;
+    font-size: 20px;
 }
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
