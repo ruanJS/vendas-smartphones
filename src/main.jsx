@@ -8,6 +8,7 @@ import Home from './routes/Home.jsx';
 import Erro404 from './routes/Erro404.jsx';
 import Aparelhos from './routes/Aparelhos.jsx';
 import VisualizarAparelho from './routes/VisualizarAparelho.jsx';
+import { ListaAparelhos } from "./components/ListaAparelhos";
 
 const router = createBrowserRouter([
   { path: '/' , element: <App/>,
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
     children: [
       { path: '/' , element: <Home/>},
       { path: '/aparelhos' , element: <Aparelhos/>},
-      { path: '/visualizar/aparelho/:id' , element: <VisualizarAparelho/>},
+      { path: '/visualizar/aparelhos/:id' , element: <VisualizarAparelho/>},
+      { path: '/lista/aparelhos/:id' , element: <ListaAparelhos/>}
     ]
   }
 ]);
