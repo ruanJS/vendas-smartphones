@@ -5,7 +5,7 @@ export default function Cabecalho(props){
     return(
         <>
             <header>
-                <h1>Venda de Aparelhos</h1>
+                <h1>Venda de aparelhos</h1>
                 {/*Recuperar prop.children de Lista */}
                 
                 <ul>
