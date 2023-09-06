@@ -14,10 +14,17 @@ const router = createBrowserRouter([
   { path: '/' , element: <App/>,
     errorElement: <Erro404/>,
     children: [
-      { path: '/' , element: <Home/>},
-      { path: '/aparelhos' , element: <Aparelhos/>},
-      { path: '/visualizar/aparelhos/:id' , element: <VisualizarAparelho/>},
-      { path: '/lista/aparelhos/:id' , element: <ListaAparelhos/>}
+      { path: '/' , 
+      element: <Home/>},
+
+      { path: '/aparelhos' , 
+      element: <Aparelhos/>},
+
+      { path: '/visualizar/aparelhos/:id', 
+      element: <VisualizarAparelho/>},
+
+      { path: '/lista/aparelhos/:id' , 
+      element: <ListaAparelhos/>}
     ]
   }
 ]);
