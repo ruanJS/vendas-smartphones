@@ -8,7 +8,7 @@ export default function Lista(){
             
             <Cabecalho>        
                     <li><Link to='/'>Incio</Link> </li>
-                    <li><Link to='/Aparelhos'>Aparelhos</Link> </li>
+                    <li><Link to='/aparelhos'>Aparelhos</Link> </li>
                     
             </Cabecalho>
             
