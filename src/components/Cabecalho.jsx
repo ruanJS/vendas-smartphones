@@ -13,12 +13,10 @@ export default function Cabecalho(props){
                     props.children.map((item, index) =>{ 
                         createElement("li", {key: index}, item);
                         return item;
-                    })
-                    
+                    }) 
                 }
-                </ul>
-                
-            </header>
+                </ul>               
+           </header>
         </>
     )
 }
