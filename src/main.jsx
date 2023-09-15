@@ -1,30 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import './App.css';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './App.css'
 
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import Home from './routes/Home.jsx';
 import Erro404 from './routes/Erro404.jsx';
-import Aparelhos from './routes/Aparelhos.jsx';
 import VisualizarAparelho from './routes/VisualizarAparelho.jsx';
-import { ListaAparelhos } from "./components/ListaAparelhos";
+import Aparelhos from './routes/Aparelhos.jsx';
 
 const router = createBrowserRouter([
   { path: '/' , element: <App/>,
     errorElement: <Erro404/>,
     children: [
-      { path: '/' , 
-      element: <Home/>},
+      { path: '/' , element: <Home/>},
+      { path: '/aparelhos' , element: <Aparelhos/>},
+      { path: '/visualizar/aparelho/:id' , element: <VisualizarAparelho/>},
 
-      { path: '/aparelhos' , 
-      element: <Aparelhos/>},
-
-      { path: '/visualizar/aparelhos/:id', 
-      element: <VisualizarAparelho/>},
-
-      { path: '/lista/aparelhos/:id' , 
-      element: <ListaAparelhos/>}
+      { 
+        path: "/antiga",
+        element: <Navigate to="/"/>
+      }
     ]
   }
 ]);
